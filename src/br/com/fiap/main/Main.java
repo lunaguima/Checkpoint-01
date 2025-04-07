@@ -1,8 +1,8 @@
 package br.com.fiap.main;
 
-// Nome:Luna de Carvalho Guimarães RM:562290
-// Nome:Andrei de Paiva Gibbini RM:563061
-// Nome:Aline Lourenço Carvalho RM:564538
+/* Nome:Luna de Carvalho Guimarães RM:562290
+   Nome:Andrei de Paiva Gibbini RM:563061
+   Nome:Aline Lourenço Carvalho RM:564538 */
 import br.com.fiap.bean.DespesaFamiliar;
 
 import java.util.Scanner;
@@ -24,13 +24,13 @@ public class Main {
             renda = scan.nextDouble();
             System.out.println("Digite o número de moradores em sua residência");
             moradores= scan.nextInt();
-            System.out.println("Digite quanto é a sua conta de luz:");
+            System.out.println("Digite quanto é a conta de luz:");
             luz = scan.nextDouble();
-            System.out.println("Digite quanto é a sua conta de água:");
+            System.out.println("Digite quanto é a conta de água:");
             agua = scan.nextDouble();
-            System.out.println("Digite quanto é a sua conta de internet:");
+            System.out.println("Digite quanto é a conta de internet:");
             internet= scan.nextDouble();
-            System.out.println("Digite quanto é sua mensalidade da Academia:");
+            System.out.println("Digite quanto é a mensalidade da Academia:");
             mensalidade= scan.nextDouble();
 
             despesa.rendaFamiliar = renda;
@@ -41,7 +41,7 @@ public class Main {
             despesa.valorMensalidadeDaAcademia = mensalidade;
 
 
-            System.out.printf("Renda familiar é de R$%.3f\nTotal de Gastos R$%.3f \nRenda Líquida R$%.3f", renda,despesa.calcularTotalDeDespesas(), despesa.calcularRendaFamiliarLiquida() );
+            System.out.printf("Renda familiar é de R$%.3f\nTotal de Gastos R$%.3f \nRenda Líquida R$%.3f",renda, despesa.calcularTotalDeDespesas(), despesa.calcularRendaFamiliarLiquida() );
 
         } catch (Exception e) {
             System.out.println("Formato incorreto");

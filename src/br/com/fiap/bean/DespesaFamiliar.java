@@ -1,8 +1,8 @@
 package br.com.fiap.bean;
 
-// Nome:Luna de Carvalho Guimarães RM:562290
-// Nome:Andrei de Paiva Gibbini RM:563061
-// Nome:Aline Lourenço Carvalho RM:564538
+/* Nome:Luna de Carvalho Guimarães RM:562290
+   Nome:Andrei de Paiva Gibbini RM:563061
+   Nome:Aline Lourenço Carvalho RM:564538 */
 public class DespesaFamiliar {
     // atributos
     public double rendaFamiliar;
@@ -14,19 +14,19 @@ public class DespesaFamiliar {
 
     // métodos
     public double calcularTotalDeDespesas(){
-        double academia, totaldespesas;
+        double academia, totalDespesas;
 
         academia= numeroDeMoradores * valorMensalidadeDaAcademia;
-        totaldespesas= academia + gastoComAgua + gastoComInternet + gastoComLuz;
+        totalDespesas= academia + gastoComAgua + gastoComInternet + gastoComLuz;
 
-        return totaldespesas;
+        return totalDespesas;
     }
     public double calcularRendaFamiliarLiquida(){
-        double rendaliquida;
+        double rendaLiquida;
 
-        rendaliquida=rendaFamiliar - calcularTotalDeDespesas();
+        rendaLiquida=rendaFamiliar - calcularTotalDeDespesas();
 
-        return rendaliquida;
+        return rendaLiquida;
     }
 
 }
